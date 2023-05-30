@@ -1,0 +1,166 @@
+@font-face {
+    font-family: "font1";
+    src: url("../fonst/roboto.ttf");
+}
+@font-face {
+    font-family: "welcome";
+    src: url('../fonst/GreatVibes-Regular.ttf');
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+.nav-div{
+    position: relative;
+    margin: 0 auto;
+    max-width: 1400px;
+    min-height: 100vh;
+    display: flex;
+    background-image: url('../img/cofee-bg.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    object-fit: cover;
+}
+.nav{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(240, 248, 255, 0.238);
+}
+.nav_content{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 15vh;
+}
+.nav_content_left{
+    color: black;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding-left: 60px;
+}
+.nav_content_right{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    gap: 46px;
+    align-items: center;
+    justify-content: center;
+}
+.nav_content_left > a{
+    font-family: "font1";
+    letter-spacing: 5px;
+    color: white;
+    font-size: 30px;
+}
+.nav_content_right >a{
+    letter-spacing: 3px;
+    font-family: "font1";
+    color: white;
+    font-size: 19px;
+}
+
+.welcome{
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 450px;
+    height: 250px;
+    position: absolute;
+    
+}
+.welcome:hover{
+    background-color: rgba(240, 248, 255, 0.185);
+    transition: 1.2s;
+    border-top-left-radius: 150px;
+    border-bottom-right-radius: 150px;
+}
+
+#welcome{
+    font-family: "welcome";
+    font-size: 80px;
+}
+#Fill{
+    font-family: "font1";
+    font-size: 18px;
+}
+.welcome_btn{
+    margin-top: 10px;
+    display: block;
+    width: 150px;
+    border: none;
+    height: 50px;
+    background-color: white;
+    color:saddlebrown;
+    border-top-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    overflow: hidden;
+    position: relative;
+}
+.welcome_btn::after{
+    content: 'BUY';
+    position: absolute;
+    background-color: saddlebrown;
+    color: white;
+    width: 100%;
+    height: 100%;
+    top: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    left: 0;
+}
+.welcome_btn:hover::after{
+    top: 0;
+    transition: 0.3s;
+    
+}
+.about{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 1400px;
+    margin: 0 auto;
+    min-height: 20vh;
+}
+.about > p{
+    font-size: 28px;
+    color: saddlebrown;
+    font-family: "font1";
+    border-bottom: 1px solid saddlebrown;
+    margin-bottom: 30px;
+}
+.about_content{
+    max-width: 1400px;
+    margin: 0 auto;
+    min-height: 80vh;
+    background-color: aqua;
+    display: flex;
+    gap: 100px;
+    justify-content: center;
+}
+.about-content-left{
+    width: 40%;
+    height: 70vh;
+}
+.about-content-left >img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    background-position: center;
+}
+.about-content-right{
+    background-color: lightcoral;
+    width: 45%;
+    height: 70vh;
+}
